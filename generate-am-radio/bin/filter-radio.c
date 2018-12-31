@@ -45,7 +45,7 @@ int main (int argc, char *argv[]) {
   // Interference noise
   float interference_level_mkv = 0.14;
   if (argc > 5) {
-    interference_level_mkv = ( (float) atoi(argv[5] * 0.01 );
+    interference_level_mkv = ( (float) atoi(argv[5]) * 0.01 );
   }
   float interference_freq_factor = rand() % 1000 / 1000.0 * 0.1 + 0.13,
         interference_fading_fast_period = rand() % 2000 + 1500,
