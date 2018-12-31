@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+
+$DIR/bin/stream-radio \
+  "http://online.radioc.ru:8000/radioc"\
+  "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_128kbps"\
+  810\
+  10\
+  &
