@@ -39,10 +39,11 @@ and edit the script **stream-template-1206am**
 DIR=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
 
 $DIR/bin/stream-radio \
-  "PUT_YOUR_FAVORITE_AUDIO_STREAM_HERE"\
-  "PUT_HERE_ANY_BACKGROUND_STREAM"\
-  1206\
-  1\
+  "PUT_YOUR_FAVORITE_AUDIO_STREAM_HERE"\   # Main radio station (will be converted to old lamp AM radio sound)
+  "PUT_HERE_ANY_BACKGROUND_STREAM"\        # Background radio station (at the same frequency)
+  1206\                                    # Radio station «frequency», in kHz
+  10\                                      # Received signal strength, in 1/10 µV
+  14\                                      # Interference noise, in 1/100 µV
   &
 
 ```
