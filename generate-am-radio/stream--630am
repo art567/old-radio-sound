@@ -6,6 +6,6 @@ $DIR/bin/stream-radio \
   "http://online.radioc.ru:8000/radioc"\
   "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_128kbps"\
   630\
-  10\
-  6\
+  100\
+  60\
   &

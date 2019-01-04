@@ -6,6 +6,6 @@ $DIR/bin/stream-radio \
   "http://online.carnivalfm.ru:8000/stream/2/"\
   "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_128kbps"\
   1512\
-  12\
-  9\
+  120\
+  90\
   &
