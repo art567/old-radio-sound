@@ -12,7 +12,7 @@
     <svrinfobitrate>32</svrinfobitrate>
     <svrinfoquality>3.0</svrinfoquality>
     <svrinfochannels>1</svrinfochannels>
-    <svrinfosamplerate>8000</svrinfosamplerate>
+    <svrinfosamplerate>9000</svrinfosamplerate>
 
     <svrinfopublic>0</svrinfopublic>
 </ezstream>
