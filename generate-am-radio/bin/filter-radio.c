@@ -13,14 +13,21 @@ float level_with_fading (float level, long t, float fast_period, float medium_pe
 
 int main (int argc, char *argv[]) {
 
-  // Randomize from frequency value
-  srand(atof(argv[3]));
+  // Randomize from 6 arg or frequency value
+  if (argc > 6)
+  {
+    srand(atof(argv[6]));
+  }
+  else
+  {
+    srand(atof(argv[3]));
+  }
 
   // Signal component levels
   // Payload signal
   float signal_level_mkv = 10.0;
   if (argc > 4) {
-    signal_level_mkv = ( (float) atoi(argv[4]) * 0.1 );
+    signal_level_mkv = (float) atof(argv[4]) * 0.1;
   }
   float signal_fading_fast_period = rand() % 1000 + 300,
         signal_fading_medium_period = rand() % 15000 + 17500,
@@ -43,9 +50,9 @@ int main (int argc, char *argv[]) {
         bg_signal_fading_extralong_period = rand() % 200000 + 150000;
 
   // Interference noise
-  float interference_level_mkv = 0.14;
+  float interference_level_mkv = 0.01;
   if (argc > 5) {
-    interference_level_mkv = ( (float) atoi(argv[5]) * 0.01 );
+    interference_level_mkv = (float) atof(argv[5]) * 0.01;
   }
   float interference_freq_factor = rand() % 1000 / 1000.0 * 0.1 + 0.13,
         interference_fading_fast_period = rand() % 2000 + 1500,
