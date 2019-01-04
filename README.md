@@ -51,7 +51,9 @@ Put here your favorite audio streams and change the other parameters if you want
 
 - **1206** means the radio frequency, it will name the icecast stream like .../**1206am**, and also will initialize the random generator to make "air conditions" repeatable,
 
-- **1** is the level of main audio stream in microvolts, the value may be in the range **1...10** or other if you like.
+- **10** is the level of main audio stream in 1/10 microvolts, the value may be in the range **1...100** or other if you like.
+
+- **14** is the level of interference noise in 1/100 microvolts, the value may be in the range **1...20** (recommended).
 
 If all is ok after starting this script you can hear the old warm radio on **localhost:8092/1206am**
 
