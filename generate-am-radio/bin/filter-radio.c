@@ -27,7 +27,7 @@ int main (int argc, char *argv[]) {
   // Payload signal
   float signal_level_mkv = 10.0;
   if (argc > 4) {
-    signal_level_mkv = (float) atof(argv[4]) * 0.1;
+    signal_level_mkv = (float) atof(argv[4]) * 0.01f;
   }
   float signal_fading_fast_period = rand() % 1000 + 300,
         signal_fading_medium_period = rand() % 15000 + 17500,
@@ -52,7 +52,7 @@ int main (int argc, char *argv[]) {
   // Interference noise
   float interference_level_mkv = 0.01;
   if (argc > 5) {
-    interference_level_mkv = (float) atof(argv[5]) * 0.01;
+    interference_level_mkv = (float) atof(argv[5]) * 0.001f;
   }
   float interference_freq_factor = rand() % 1000 / 1000.0 * 0.1 + 0.13,
         interference_fading_fast_period = rand() % 2000 + 1500,
